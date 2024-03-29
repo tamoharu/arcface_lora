@@ -1,0 +1,9 @@
+.assets
+.idea
+.vscode
+**/venv/
+**/__pycache__/
+**/pyvenv.cfg
+**/local_cache/
+**/*.DS_Store
+/models/*
