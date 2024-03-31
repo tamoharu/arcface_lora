@@ -7,10 +7,13 @@ import config.globals as globals
 
 
 def test_swap():
-    globals.model_type = 'torch'
-    globals.model_name = 'trained_model.pth'
+    # globals.model_type = 'torch'
+    globals.model_type = 'onnx'
+    # globals.model_name = 'trained_model.pth'
+    # globals.model_name = 'arcface_w600k_r50.pth'
+    globals.model_name = 'w600k_mbf.onnx'
     sources_path = ['./assets/hou/hou1.jpg', './assets/hou/hou2.jpg']
-    target_path = './assets/hashikan/hashikan1.jpg'
+    target_path = './assets/hashikan/hashikan5.jpg'
     sources = read_static_images(sources_path)
     target = read_static_image(target_path)
     result = main(sources, target)
